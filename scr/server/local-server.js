@@ -31,7 +31,7 @@ class LocalServer {
 
   start() {
     this.init();
-    this.app.listen(this.port, this.host, (err) => {
+    this.app.listen(this.port, (err) => {
       if (err) {
         logger.error(`тут ошибка`, err);
         return;

@@ -33,7 +33,7 @@ class LocalServer {
     this.init();
     this.app.listen(this.port, (err) => {
       if (err) {
-        logger.error(`тут ошибка`, err);
+        logger.error(`error listening app`, err);
         return;
       }
       console.log(`Local server is running at http://${this.host}:${this.port}`);

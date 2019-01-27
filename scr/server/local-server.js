@@ -41,6 +41,7 @@ class LocalServer {
   }
 
   init() {
+    console.log(STATIC_DIR);
     this.app.use(express.static(STATIC_DIR));
     this.app.use(`/api/offers`, offerRoute);
     /*  this.app.use(NOT_FOUND_HANDLER);
